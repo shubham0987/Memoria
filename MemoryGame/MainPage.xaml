@@ -1,0 +1,76 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="MemoryGame.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded_1">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Memory Game" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="play game" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Image x:Name="c1" Height="80" Source="/ApplicationIcon.png" Tap="c1_Tap"></Image>
+                <Image x:Name="c2" Height="80" Source="/ApplicationIcon.png" Tap="c2_Tap"></Image>
+                <Image x:Name="c3" Height="80" Source="/ApplicationIcon.png" Tap="c3_Tap"></Image>
+                <Image x:Name="c4" Height="80" Source="/ApplicationIcon.png" Tap="c4_Tap"></Image>
+                <Image x:Name="c5" Height="80" Source="/ApplicationIcon.png" Tap="c5_Tap"></Image>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,80,0,0">
+                <Image x:Name="c6" Height="80" Source="/ApplicationIcon.png" Tap="c6_Tap"></Image>
+                <Image x:Name="c7" Height="80" Source="/ApplicationIcon.png" Tap="c7_Tap"></Image>
+                <Image x:Name="c8" Height="80" Source="/ApplicationIcon.png" Tap="c8_Tap"></Image>
+                <Image x:Name="c9" Height="80" Source="/ApplicationIcon.png" Tap="c9_Tap"></Image>
+                <Image x:Name="c10" Height="80" Source="/ApplicationIcon.png" Tap="c10_Tap"></Image>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,160,0,0">
+                <Image x:Name="c11" Height="80" Source="/ApplicationIcon.png" Tap="c11_Tap"></Image>
+                <Image x:Name="c12" Height="80" Source="/ApplicationIcon.png" Tap="c12_Tap"></Image>
+                <Image x:Name="c13" Height="80" Source="/ApplicationIcon.png" Tap="c13_Tap"></Image>
+                <Image x:Name="c14" Height="80" Source="/ApplicationIcon.png" Tap="c14_Tap"></Image>
+                <Image x:Name="c15" Height="80" Source="/ApplicationIcon.png" Tap="c15_Tap"></Image>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,240,0,0">
+                <Image x:Name="c16" Height="80" Source="/ApplicationIcon.png" Tap="c16_Tap"></Image>
+                <Image x:Name="c17" Height="80" Source="/ApplicationIcon.png" Tap="c17_Tap"></Image>
+                <Image x:Name="c18" Height="80" Source="/ApplicationIcon.png" Tap="c18_Tap"></Image>
+                <Image x:Name="c19" Height="80" Source="/ApplicationIcon.png" Tap="c19_Tap"></Image>
+                <Image x:Name="c20" Height="80" Source="/ApplicationIcon.png" Tap="c20_Tap"></Image>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="28,320,28,0">
+                <Image x:Name="c21" Height="80" Source="/ApplicationIcon.png" Tap="c21_Tap"/>
+                <Image x:Name="c22" Height="80" Source="/ApplicationIcon.png" Tap="c22_Tap"/>
+                <Image x:Name="c23" Height="80" Source="/ApplicationIcon.png" Tap="c23_Tap"/>
+                <Image x:Name="c24" Height="80" Source="/ApplicationIcon.png" Tap="c24_Tap"/>
+                <Image x:Name="c25" Height="80" Source="/ApplicationIcon.png" Tap="c25_Tap"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="28,400,28,0">
+                <Image x:Name="c26" Height="80" Source="/ApplicationIcon.png" Tap="c26_Tap"/>
+                <Image x:Name="c27" Height="80" Source="/ApplicationIcon.png" Tap="c27_Tap"/>
+                <Image x:Name="c28" Height="80" Source="/ApplicationIcon.png" Tap="c28_Tap"/>
+                <Image x:Name="c29" Height="80" Source="/ApplicationIcon.png" Tap="c29_Tap"/>
+                <Image x:Name="c30" Height="80" Source="/ApplicationIcon.png" Tap="c30_Tap"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+ 
+</phone:PhoneApplicationPage>

@@ -1,0 +1,80 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="MemoryGame.Info"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModels="clr-namespace:MemoryGame.ViewModels"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Developed By Shubham Saxena" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="about" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            
+            <StackPanel>
+                <TextBlock 
+                    Text="Memory Game" 
+                    Margin="12,0,12,0" 
+                    FontSize="{StaticResource PhoneFontSizeLarge}" 
+                    FontFamily="{StaticResource PhoneFontFamilySemiBold}"/>
+                <TextBlock 
+                    Text="1.0.0.1" 
+                    Margin="12,0,12,0" 
+                    FontSize="{StaticResource PhoneFontSizeNormal}"/>
+            </StackPanel>
+            
+            <TextBlock 
+                Grid.Row="1" 
+                Text="Memory Game is designed just to help in sharping your memory, it is based on your memorizing power. There will be certain number of blocks and you need to remember which block had the same value and your hit count will increase accordingly."
+                Margin="12,24,12,24" 
+                TextWrapping="Wrap" 
+                Foreground="{StaticResource PhoneSubtleBrush}" 
+                FontSize="{StaticResource PhoneFontSizeNormal}" />
+            <TextBlock 
+                    Text="About Developer" 
+                    FontSize="{StaticResource PhoneFontSizeLarge}" 
+                    FontFamily="{StaticResource PhoneFontFamilySemiBold}" Margin="12,0,-12,284" Grid.Row="4"/>
+
+            <StackPanel Grid.Row="4" Margin="12,0,12,50" VerticalAlignment="Bottom">
+                <TextBlock 
+                    Text="Copyright 2013, Rights Reserved." 
+                    Margin="0,12,0,0" 
+                    FontSize="{StaticResource PhoneFontSizeNormal}"/>
+                <TextBlock 
+                    Text="Shubham Saxena" 
+                    FontSize="{StaticResource PhoneFontSizeNormal}"/>
+            </StackPanel>
+            <TextBlock 
+            	Grid.Row="4" 
+            	Text="Shubham Saxena is developer, blogger and Software Engineer by profession. He blogs basically on Microsoft Technology and is also awarded Most Valuable Professional (MVP) by Mindcracker. Contact - shubham0987@gmail.com"
+            	Margin="12,45,12,124" 
+            	TextWrapping="Wrap" 
+            	Foreground="{StaticResource PhoneSubtleBrush}" 
+            	FontSize="{StaticResource PhoneFontSizeNormal}" />
+        </Grid>
+    </Grid>
+    
+</phone:PhoneApplicationPage>
